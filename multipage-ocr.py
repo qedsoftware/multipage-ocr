@@ -14,11 +14,12 @@ def usage():
 	print('Options:')
 	print('\t-i, --input [filename]	input PDF to perform OCR on')
 	print('\t-o, --output [filename] optional name for output file; if not supplied, output is [input_basename]_ocr.txt')
-	print('\t-d, --density		dpi density to supply to ImageMagick convert; defaults to 300')
-	print('\t-b, --depth		bit depth; defaults to 8')
-	print('\t-f, --imageformat	image format (e.g., jpg, png, tif); defaults to jpg')
-	print('\t-p, --psm		tesseract layout analysis mode; defaults to 3')
-	print('\t-q, --quiet		tesseract quiet mode 0 or 1; defaults to 1')
+	print('\t-d, --density [number]		dpi density to supply to ImageMagick convert; defaults to 300')
+	print('\t-b, --depth [number]		bit depth; defaults to 8')
+	print('\t-f, --imageformat [format]	image format (e.g., jpg, png, tif); defaults to jpg')
+	print('\t-p, --psm [number]		tesseract layout analysis mode, see man tesseract for more details; defaults to 3')
+	print('\t-q, --quiet [0 or 1]		tesseract quiet 0 or 1; defaults to 1')
+	print('\t-c, --clean [0 or 1]		delete intermediate files; defaults to 1')
 	
 # check that an argument has been provided
 if len(sys.argv) < 2:
