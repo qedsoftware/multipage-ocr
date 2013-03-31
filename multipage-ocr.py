@@ -81,7 +81,10 @@ def main(argv):
 
 	# specify output file
 	if None == output_file:
-		output_file = dirname + "/" + base + "_ocr.txt"
+		if "" == dirname:
+			output_file = base + "_ocr.txt"
+		else:
+			output_file = dirname + "/" + base + "_ocr.txt"
 
 	# get number of pages
 	num_pages = PdfFileReader(file(input_file)).getNumPages()
