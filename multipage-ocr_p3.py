@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # Multi-page PDF --> Tesseract OCR --> Text
 # William Wu <william.wu@themathpath.com>
