@@ -10,7 +10,7 @@ Each page of the PDF is converted into an image, each image is converted to text
 
 The script allows you to specify ImageMagick parameters in the image conversion, along with some tesseract parameters for the OCR.
 
-William Wu (william.wu@themathpath.com), 2013 March 9 
+William Wu (w@qed.ai), 2013 March 9 
 
 Python 3
 ---------
