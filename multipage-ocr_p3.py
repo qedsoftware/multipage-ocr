@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Multi-page PDF --> Tesseract OCR --> Text
-# William Wu <william.wu@themathpath.com>
+# William Wu <w@qed.ai>
 # 2013-03-08 
 
 # Updated to run with Python 3.6 by Ian Watt (@watty62 2018-05-30)
