@@ -10,8 +10,17 @@ Each page of the PDF is converted into an image, each image is converted to text
 
 The script allows you to specify ImageMagick parameters in the image conversion, along with some tesseract parameters for the OCR.
 
-William Wu (william.wu@themathpath.com), 2013 March 9 
+William Wu (w@qed.ai), 2013 March 9 
 
+Python 3
+---------
+The original script has been updated on 2018 May 20 by [Ian Watt](http://github.com/watty62) to work with Python 3.6+ on Mac OSX.  The new version is [multipage-ocr_p3.py](multipage-ocr_p3.py) 
+
+If you experience errors at line 121 - convert PDF to image format - you can cure it by running "brew install imagemagick" as I did.  See the most popular answer to this [StackOverflow question](https://stackoverflow.com/questions/28627473/error-for-convert-command-in-command-line) which fixed the error.  
+
+Python 2
+---------
+The [original script](multipage-ocr.py) created by William Wu is unchanged. 
 
 Demo
 ---------------
@@ -41,3 +50,7 @@ To install tesseract on Mac OS X:
 To install pypdf:
 
 	$ pip install pypdf
+
+To install imagemagick 
+
+    $ brew install imagemagick
